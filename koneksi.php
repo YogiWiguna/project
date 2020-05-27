@@ -11,9 +11,9 @@ $conn = new mysqli ($server, $username, $password,$dbname);
 if ($conn->connect_error){
     die("Connection Failed".$conn->connect_error);
 }
-$sql= "Select * from menu";
+$sql= "SELECT * FROM menu";
 $result = $conn->query($sql);
-$data=aray();
+$data=array();
 
 if($result->num_rows>0){
     while ($row=$result->fetch_assoc()){
