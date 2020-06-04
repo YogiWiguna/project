@@ -1,8 +1,8 @@
 <?php 
 $server = 'localhost';
-$username = 'id13861416_project';
-$password  = '?PbwYPbH[S6_yZ_w';
-$dbname = 'id13861416_uasyogi';
+$username = 'id13861416_project1';
+$password  = ')lwXO-y6S4r{QHsB';
+$dbname = 'id13861416_uasyogi1';
 
 //koneksi
 $conn = new mysqli ($server, $username, $password,$dbname);
@@ -11,7 +11,7 @@ $conn = new mysqli ($server, $username, $password,$dbname);
 if ($conn->connect_error){
     die("Connection Failed".$conn->connect_error);
 }
-$sql= "SELECT * FROM menu";
+$sql= "SELECT * FROM tmenu";
 $result = $conn->query($sql);
 $data=array();
 
