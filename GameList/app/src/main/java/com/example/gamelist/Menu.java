@@ -4,12 +4,14 @@ public class Menu {
 
     private String nama;
     private String des;
-    private String gambar;
+    private String img;
+    private String ket;
 
-    public Menu(String datanama, String datades, String datagambar){
+    public Menu(String datanama, String datades, String datagambar, String dataket){
         nama=datanama;
         des=datades;
-        gambar=datagambar;
+        img=datagambar;
+        ket=dataket;
     }
 
     public String getNama() {
@@ -20,7 +22,12 @@ public class Menu {
         return des;
     }
 
-    public String getGambar() {
-        return gambar;
+    public String getImg() {
+        return img;
+    }
+
+    public String getKet() {
+        return ket;
     }
 }
+
